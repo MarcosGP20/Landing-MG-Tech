@@ -13,8 +13,8 @@
   </head>
   <body>
     <header>
-      <nav class="bg-gray-200 py-2">
-        <div class="container mx-auto px-2">
+      <nav class="bg-gray-200 py-4">
+        <div class="container mx-auto px-4">
           <div class="flex justify-between items-center">
             <div class="flex-shrink-0">
               <a href="#">
@@ -25,17 +25,54 @@
                 />
               </a>
             </div>
-            <ul class="flex space-x-8">
-              <li class="text-xl hover:text-blue-600 transition-colors">
+
+            <!-- Botón hamburguesa para celular -->
+            <button class="md:hidden" id="menuButton">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Menú de navegación -->
+            <ul class="hidden md:flex space-x-8" id="navMenu">
+              <li class="text-lg hover:text-blue-600 transition-colors">
                 <a href="#">Inicio</a>
               </li>
-              <li class="text-xl hover:text-blue-600 transition-colors">
+              <li class="text-lg hover:text-blue-600 transition-colors">
                 <a href="#">Servicios</a>
               </li>
-              <li class="text-xl hover:text-blue-600 transition-colors">
+              <li class="text-lg hover:text-blue-600 transition-colors">
                 <a href="#">Quienes somos</a>
               </li>
-              <li class="text-xl hover:text-blue-600 transition-colors">
+              <li class="text-lg hover:text-blue-600 transition-colors">
+                <a href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Menú móvil -->
+          <div class="md:hidden hidden" id="mobileMenu">
+            <ul class="pt-4 pb-3 space-y-3">
+              <li class="text-lg hover:text-blue-600 transition-colors">
+                <a href="#">Inicio</a>
+              </li>
+              <li class="text-lg hover:text-blue-600 transition-colors">
+                <a href="#">Servicios</a>
+              </li>
+              <li class="text-lg hover:text-blue-600 transition-colors">
+                <a href="#">Quienes somos</a>
+              </li>
+              <li class="text-lg hover:text-blue-600 transition-colors">
                 <a href="#">Contacto</a>
               </li>
             </ul>
@@ -43,5 +80,38 @@
         </div>
       </nav>
     </header>
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <main>
+      <section
+        class="hero relative bg-gradient-to-br from-black to-[#434343] text-[#f2f2f2]"
+      >
+        <div class="container mx-auto px-2 py-48">
+          <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6">
+              Transformamos tu presencia digital
+            </h1>
+            <p class="text-xl mb-8">
+              Desarrollamos soluciones web personalizadas que impulsan el
+              crecimiento de tu negocio. Desde diseño web hasta desarrollo de
+              aplicaciones, hacemos realidad tus ideas digitales.
+            </p>
+            <button
+              class="bg-[#f2f2f2] text-gray-900 px-6 py-3 rounded-lg shadow-lg hover:bg-white hover:scale-105 transition-transform duration-300"
+            >
+              ¡Hablemos de tu proyecto!
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
