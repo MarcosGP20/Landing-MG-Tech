@@ -13,21 +13,21 @@
   </head>
   <body>
     <header>
-      <nav class="bg-gray-200 py-4">
-        <div class="container mx-auto px-4">
+      <nav class="bg-gray-100 py-3">
+        <div class="container mx-auto px-5">
           <div class="flex justify-between items-center">
             <div class="flex-shrink-0">
               <a href="#">
                 <img
                   src="/assets/imagen_2025-05-04_123735384.svg"
                   alt="logo"
-                  class="w-30 h-20"
+                  class="w-35 h-20"
                 />
               </a>
             </div>
 
             <!-- Botón hamburguesa para celular -->
-            <button class="md:hidden" id="menuButton">
+            <button class="md:hidden text-gray-900" id="menuButton">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -44,18 +44,34 @@
             </button>
 
             <!-- Menú de navegación -->
-            <ul class="hidden md:flex space-x-8" id="navMenu">
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Inicio</a>
+            <ul class="hidden md:flex space-x-14 items-center" id="navMenu">
+              <li class="text-lg text-gray-900 group">
+                <a
+                  href="#"
+                  class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+                  >Inicio</a
+                >
               </li>
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Servicios</a>
+              <li class="text-lg text-gray-900 group">
+                <a
+                  href="#"
+                  class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+                  >Servicios</a
+                >
               </li>
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Quienes somos</a>
+              <li class="text-lg text-gray-900 group">
+                <a
+                  href="#"
+                  class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+                  >Quienes somos</a
+                >
               </li>
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Contacto</a>
+              <li class="text-lg">
+                <a
+                  href="#"
+                  class="px-4 py-2 bg-slate-900 text-white rounded-lg no-underline transition-all duration-300 ease-in-out hover:bg-slate-800 hover:scale-105 hover:shadow-lg active:scale-95"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -63,17 +79,33 @@
           <!-- Menú móvil -->
           <div class="md:hidden hidden" id="mobileMenu">
             <ul class="pt-4 pb-3 space-y-3">
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Inicio</a>
+              <li class="text-lg text-gray-900 group">
+                <a
+                  href="#"
+                  class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+                  >Inicio</a
+                >
               </li>
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Servicios</a>
+              <li class="text-lg text-gray-900 group">
+                <a
+                  href="#"
+                  class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+                  >Servicios</a
+                >
               </li>
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Quienes somos</a>
+              <li class="text-lg text-gray-900 group">
+                <a
+                  href="#"
+                  class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+                  >Quienes somos</a
+                >
               </li>
-              <li class="text-lg hover:text-blue-600 transition-colors">
-                <a href="#">Contacto</a>
+              <li class="text-lg">
+                <a
+                  href="#"
+                  class="inline-block px-4 py-2 bg-slate-900 text-white rounded-lg no-underline transition-all duration-300 ease-in-out hover:bg-slate-800 hover:scale-105 hover:shadow-lg active:scale-95"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -91,9 +123,7 @@
     </script>
 
     <main>
-      <section
-        class="hero relative bg-gradient-to-br from-black to-[#434343] text-[#f2f2f2]"
-      >
+      <section class="hero relative bg-[#fff0e4] text-gray-900">
         <div class="container mx-auto px-2 py-48">
           <div class="max-w-3xl mx-auto text-center">
             <h1 class="text-5xl font-bold mb-6">
@@ -105,7 +135,7 @@
               aplicaciones, hacemos realidad tus ideas digitales.
             </p>
             <button
-              class="bg-[#f2f2f2] text-gray-900 px-6 py-3 rounded-lg shadow-lg hover:bg-white hover:scale-105 transition-transform duration-300"
+              class="bg-gray-900 text-[#fff0e4] px-6 py-3 rounded-lg shadow-lg hover:bg-gray-800 transition"
             >
               ¡Hablemos de tu proyecto!
             </button>
